@@ -14,6 +14,6 @@ hostclass :'eric0_startup::motd' do
   file "#{workdir}/motd", "/tmp/#{workdir}/motd_copy" do |f|
     # ensure => present, content => "...", [ .. ]
     f.ensure  = :present
-    f.content = "Welcome to Puppet, via the Puppet Ruby DSL!\n"
+    f.content = "Welcome to Puppet, coming to you via the Puppet Ruby DSL!\n"
   end
 end
